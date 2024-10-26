@@ -157,3 +157,127 @@ Here is what it looks like:
 
 -
 
+A standard path usually consists of three components:
+
+
+A volume (a single accessible storage area with a single file system – typically residing in a single partition [section] of a hard disk) or drive letter followed by a colon ( : ) in Windows. For example, “C:” (drive) or “D:” (drive).
+
+A directory name. A backslash (\) separates subdirectories within the nested directory hierarchy. Forward slashes are frequently accepted as well. For example, “\Documents” or “\Program Files”
+
+A filename. The backslash separates the file path and the filename. For example, “\letter.docx” or “\picture.jpeg.”
+
+If all three of these components are present, the path is absolute.
+
+
+If no volume or drive letter is specified and the directory name begins with a backslash, the path is relative.
+
+
+An absolute path may look something like:
+
+
+C:\GitHubRepos\HTML_CSS\PathProject\FileName.html
+
+
+On the other hand, a relative path may have differing beginnings depending on your folder structure. Commonly seen examples include:
+
+
+Picture.jpg – where the picture file is in the same folder as the requesting file.
+
+images/picture.jpg and ./images/picture.jpg – where the picture file is located in a folder called images on the same folder level as the requesting file.
+
+../images/picture.jpg – where the picture file is located in a folder called images which is in the folder one level up from the current folder of the requesting file.
+
+It is recommended that you use relative paths when linking to images, CSS files, JavaScript files, etc. The reason for this is that if your code is run on a different machine, the absolute path may change – but the relative path always stays the same.
+
+-
+
+In normal English, implicit means “implied, though not plainly stated.”
+
+Implicit href attributes are used to create a link to another webpage that is located in the same folder as the page the <a> tag is in. If we use the folder that is your local repository as an example, an implicit link would link to a file within that folder. 
+Example: <a href="yourfilename.html">Whatever link title you choose</a>
+
+
+Explicit means “stated clearly and in detail.”
+
+Whereas an explicit href attribute links to a file not contained within the folder(s) associated with your website. Typically, explicit href attribute links are to external websites (other websites). The href attribute from the previous step (<a href="https://www.learncodinganywhere.com/"> Check out The Tech Academy!</a>) is an example of an explicit link.
+
+//I understand these but need it worded to me differently.  My assignment file has an example of each being used. 
+
+Tip: 
+
+1.) Ensure the Dog.html file includes all code required of an HTML webpage.
+
+2.) Implicit links are written as:  <a href="yourfilename.html">Whatever title you choose for your link</a> 
+
+-
+
+The <nav> tag defines a set of navigation links. Navigation links are typically included on nav bars (a rectangular strip that includes links to the main pages on a website). They look like this:
+
+Imma try to make an example...They're all click links:
+
+HOME | ABOUT | FAQs | CONTACT
+
+<nav> 
+    <a href="home page file name or URL">HOME</a> | 
+    <a href="about page file name or URL">ABOUT</a> | 
+    <a href="FAQs page file name or URL">FAQs</a> | 
+    <a href="contact page file name or URL">CONTACT</a> 
+</nav>
+
+-
+
+One way to do this is to save your file, run it in the browser, write more code, save your file again, and then click F5 in the browser (this will refresh the webpage with the newest version of your file).
+
+-
+
+Get the Video ID: For the YouTube Shorts link you provided, O9LElFTzCIk is the video ID.
+
+Use the Embed URL: The embed URL format for a YouTube video is https://www.youtube.com/embed/[VIDEO_ID].
+
+
+    <!DOCTYPE html>
+	<html lang="en">
+  	    <head>
+  	        <meta charset="UTF-8">
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   		<title>Embedded YouTube Video</title>
+	    </head>
+
+	    <body>
+   		<h1>Watch the Alien Video!</h1>
+
+   		<iframe width="560" height="315" src="https://www.youtube.com/embed/O9LElFTzCIk" frameborder="0" 		 allowfullscreen></iframe>
+
+	    </body>
+        </html>
+
+
+-<iframe>: This tag embeds the video in your HTML page.
+
+-width and height: Set the dimensions of the video player.
+
+-src: The URL with the video ID formatted for embedding.
+
+-frameborder="0": Removes the border around the iframe (older attribute, mainly for legacy support).
+
+-
+
+The <blockquote> element in HTML is used to indicate that the enclosed text is a quotation from another source. It is typically used for longer quotations and often displays the text in a block format to distinguish it from the rest of the content. You can also include a citation to indicate the source of the quotation.
+
+
+<blockquote>: This tag is used to wrap the quoted content.
+
+<p>: It’s common to include the quotation inside a <p> tag for proper formatting.
+
+<footer>: This tag can be used to include the author's name or source of the quote. This is optional but helps provide context.
+
+"By default, most browsers will indent the text in a blockquote. You can further customize its appearance using CSS. Here’s an example:"
+
+    <blockquote style="font-style: italic; border-left: 2px solid #ccc; padding-left: 10px; margin: 20px 0;">
+	<p>To be yourself in a world that is constantly trying to make you something else is the greatest 	accomplishment.</p>
+
+        <footer>— Ralph Waldo Emerson</footer>
+    </blockquote>
+
+
+
