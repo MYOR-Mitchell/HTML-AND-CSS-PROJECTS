@@ -1,0 +1,159 @@
+<!DOCTYPE html>  ##Doctype = html
+
+<html lang ="en">  ##Language = English
+
+<title> Testing and Learning </title> ##Title creates a 'header'
+<p>I don't know what I'm doing! </p>  ##<P> Creates a paragraph.
+
+</html> 
+
+
+
+<To being something> </Add slash to mark the end something>
+
+-
+
+<meta> = tag is usually used to convey data to browsers and search engines that isn’t displayed to the user.
+example: tell the search engine the name of a author.  <meta name="author" content="Lee Child">
+
+-
+
+The <head> element is a container for metadata pertaining to the HTML document itself, and should be placed between the opening <html> tag and the opening <body> tag.
+
+
+Head elements can contain:
+
+
+/Titles
+
+/Scripts (a computer program that is to be run by the browser)
+
+/File attachments (such as CSS files, JavaScript files or even custom fonts)
+
+/Character encoding
+
+/Meta data
+
+The head element is typically placed near the top of an HTML file.
+
+-
+
+A common example is an embedded video. This would be like taking a video from YouTube and displaying it on your website.
+
+The content placed between <body> and </body> tags makes up most of the content on the page. It consists of nearly anything the developer can dream of, such as: embedded video, images, text, animation, tables of data, advertisements, even music. The sky’s the limit, but within the body tag is where you'll place it.
+
+
+Here is an example:
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Write title here.</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    THIS IS WHERE ALL THE CONTENT ON THE WEBPAGE GOES
+    </body>
+</html>
+
+We use charset to set the exact character set we’re using and as mentioned earlier, UTF-8 is used for over 90% of websites.
+
+-
+
+Heading elements allow for placement of heads (titles) of sections. They’re broken into a series of graduated sizes: <h1> through <h6>.
+
+-
+
+Title shows at top of window tab.  like read the TAB and it'll say what you put.
+
+-
+
+
+A footer is literally text that appears at the foot (bottom) of each page in a book or document.  
+
+
+The <footer> tag defines a footer for a document or section.
+
+-
+
+The HTML <main> element represents the most important content of the <body> of a document or portion of a document. It consists of content that is directly related to or expands upon the central topic of a document.
+
+<body>
+	<p> Cats are interesting creatures</p>
+	<main>
+		<h1> Types of felines</h1>
+		<p>Lions, tigers, and house cars are common examples of felines. </p>
+	</main>
+	<h2>Lions</h2>
+... (not sure why the example ended with three dots.. I'm just rolling with it)
+
+On a blog post, for example, the <main> element would be where the article is placed. There should only be one “main” element per HTML page.
+
+-
+
+An attribute is a word or phrase used inside an element’s opening tag that controls the element’s behavior.
+
+
+For example, the image <img> tag allows you to place images inside your webpage. The src (source) attribute is used with this <img> tag; it gives the location of the image (where the image is being displayed from). You can see this in the following:
+
+<img src="https://www.petmd.com/sites/default/files/petmd-cat-happy-15.jpg">
+
+The image tag tells the browser where to put the image on the page, while the src attribute gives the location to pull the image from.
+
+-
+
+<h1>  This	</h1>
+<h2>  Is Just 	</h2>
+<h3>  Changing	</h3>
+<h4>  The Size	</h4> 
+
+-
+
+“Id” is short for “identification.” One of the most popular attributes is the id attribute.
+
+
+The id attribute specifies a unique name for an HTML element.
+
+
+For example, you can assign a specific <p> element the id (name) “paragraph” as follows:
+
+<p id="paragraph">This is some text.</p>
+
+Now that you have that id, you can reference (bring up; refer to) it in your code later.
+
+
+You will learn exactly how to do this and why it's useful in an upcoming step.
+
+
+Ids are specific and you can only utilize one id per element. For example, you cannot assign the same <h1> element two different ids. Also, you cannot use the same id name for two different elements. For example, this would be incorrect:
+
+<h2 id="heading"></h2> 
+<h3 id="heading"></h3>
+
+Ids must be specific to one element and cannot contain any spaces.
+
+-
+
+The anchor <a> element is the HTML code used to create a link to another page. It instructs the browser to display content from another document (typically a web page).
+
+
+As a note, in older versions of HTML, the word anchor meant what element means now (opening and closing tags and the text in between). Anchor text is the clickable text that is displayed. For example, in this link the anchor text is “The Tech Academy”:
+
+
+The Tech Academy <--- This was a link on their page.
+
+
+As a note, by default, most browsers display such links as follows:
+
+(They had an image here)
+-Blue color link text = unvisited
+-purple = visited
+-red = active
+
+The anchor element needs an attribute called an “href attribute.” “Href” is short for “hypertext reference.” This attribute contains the location of the resource or document that the author intends to link to.
+
+
+Here is what it looks like:
+<a href="https://learncodinganywhere.com/">Check out The Tech Academy!</a>
+
+-
+
