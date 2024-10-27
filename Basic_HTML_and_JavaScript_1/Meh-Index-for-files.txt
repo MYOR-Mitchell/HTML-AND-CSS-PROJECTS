@@ -1,0 +1,5 @@
+HTML 1 = Page with Alert
+Java 1 = Alert
+
+HTML 2 = Page with button
+Java 2 = function for button

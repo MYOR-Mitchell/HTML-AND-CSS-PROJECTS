@@ -279,5 +279,159 @@ The <blockquote> element in HTML is used to indicate that the enclosed text is a
         <footer>— Ralph Waldo Emerson</footer>
     </blockquote>
 
+-
 
+<article>
+    <h2>Article Title</h2>
+    <p>This is the main content of the article.</p>
+    <footer>
+        <p>Written by John Doe</p>
+        <p>Published on October 26, 2024</p>
+    </footer>
+</article>
+
+-
+
+
+A cache (pronounced “cash”) is a collection of items stored somewhere for use at a later time. For example, a weapons cache is a place where weapons are kept until they are needed.
+
+
+In computers, a cache is a set of computer memory where data can be stored for later use. One of the most common uses for a cache in computers relates to situations where there is a significant time delay in acquiring certain data. In order to provide a faster user experience, the computer will store the data in a cache after the first time that data is used in order to avoid having to read the data from a slower device or without having to dig around in the computer to find the information again.
+
+
+Files that you view from a cache may only take 2 or 3 seconds to display on your screen, while something new could take 30 seconds to be acquired, prepared for display and then displayed.
+
+-
+
+There are different ways to clear the cache, depending on the browser you’re using. Simply Google “clear cache ______(browser name).” For Google Chrome, you can click CTRL+F5.
+
+-
+
+Real time refers to a transmission of data or signal as soon as it is generated.
+
+
+As a reminder, static means “rigid; unchanging.”
+
+
+Static web sites are delivered to the browser exactly how they were stored originally on the web server. Static web pages don't change. No matter who is accessing the web site, it looks the same.
+
+
+Most web sites nowadays are dynamic, meaning that the appearance and content of the web pages can be changed on the web server before the web page is sent back to the browser, or it can be changed by the browser on the user’s computer before being displayed on the screen.
+
+-
+
+The <script> tag is used to define a JavaScript script.
+
+
+As mentioned earlier, an “object” is something that has state and behavior.
+
+
+A “method” is something an object can do – a named sequence of events.
+
+
+“Alert” is a JavaScript method that displays an alert box with an “OK” button.
+
+-
+
+Nearly every computer programming language comes with certain data types built in and allows for the creation of other types of data by computer programmers. In JavaScript, these various types of data are called “values.” There are six value types in JavaScript:
+
+
+Strings (data that represent text or a series of text)
+
+Numbers 
+
+Booleans (true or false statements)
+
+Objects (things with state and behavior)
+
+Functions (a block of organized, reusable computer code used to perform a single, related action – also called a subprogram or subroutine)
+
+Values that are undefined 
+Variables are created by using keyword var - Example: var Martin  
+
+-
+
+Functions, Methods, Routines, Subroutines, Subprograms, Procedures... All interchangeable words.
+
+Functions are valuable because of code reusability – you can invoke functions over and over. Since functions in JavaScript contain properties and methods, they are basically objects.
+
+
+Functions are useful so you don’t have to keep retyping code; you can instead simply invoke the function whenever needed. 
+
+    	function add(num1, num2) {
+        	return num1 + num2;
+    	}
+
+    	var sum = add(5, 7);
+
+
+In JavaScript, a method is a set of code associated with an object that is designed to change the state of that object when it executes. In other words, the method is performed on the object.
+
+
+You create these methods when you create the object. Let’s look at how we might do that with our previous example of a “student” object:
+
+	var student = { 
+	    firstName: "Jane", 
+	    lastName: "Smith", 
+            age: 28, 
+	    gradeAverage: function(avg) { 
+		return avg; 
+	    } 
+	}   
+
+	student.gradeAverage(3.4);
+
+-
+
+Suppose you wanted to find all paragraph elements in an HTML document. You might use code like this:
+
+var foo = document.getElementsByTagName("p");
+
+The variable called “foo” would now contain a collection of all the paragraph tags in the document.
+
+Most browsers generate a DOM for the web pages they display, and most browsers allow you to look at that DOM. Most browsers have built-in tools to help web developers; they are generally called “developer tools.”
+
+-
+
+There are two ways to specify color using the font element and color attribute:
+
+<font color="yellow">Write text here</font>
+
+2) Specify the color using its hex code (a way of specifying color using hexadecimal values). For example:
+
+<font color="#0000FF">Write text here</font>
+
+
+To assign a font color to an element (such as a paragraph) you write your code as follows:
+
+<p><font color="green">This text is written in green.</font></p>
+
+-
+
+To assign the type of font you want to utilize, use the face attribute within the font element, like this:
+
+<font face="Arial">This text is written in Arial font!</font>
+
+A few fonts: Verdana, Comic Sans, Trebuchet, Arial, Impact
+
+As a note: if you want to change the font color and type of font within the same font element, you write your HTML code like this (putting both attributes within the font opening tag):
+
+<p> 
+    <font color="orange" face="Calibri"> 
+        This orange text is written in Calibri. 
+    </font> 
+</p>
+
+
+In fact, we can also specify the font size as well, like this:
+
+<p> 
+    <font color="purple" face="Roboto" size="7"> 
+        This purple text is written in Roboto. 
+    </font> 
+</p>
+
+The size attribute uses sizes from 1 to 7 – the default browser size is 3
+
+-
 
